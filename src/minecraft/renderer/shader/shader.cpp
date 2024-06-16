@@ -47,6 +47,11 @@ void Shader::Bind()
     glUseProgram(ID);
 }
 
+void Shader::PutTex(const std::string &name, int slot)
+{
+    glUniform1i(glGetUniformLocation(ID, name.c_str()), slot);
+}
+
 void Shader::Unbind()
 {
     glUseProgram(0);

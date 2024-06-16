@@ -3,6 +3,7 @@
 #include <glad/glad.h>
 
 #include "shader/shader.hpp"
+#include "mesh/texturedmesh.hpp"
 
 class Renderer
 {
@@ -14,4 +15,5 @@ public:
     void Update();
 private:
     Shader* shader;
+    TexturedMesh* texturedmesh;
 };

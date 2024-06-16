@@ -14,6 +14,7 @@ public:
     ~Shader();
 
     void Bind();
+    void PutTex(const std::string& name, int slot);
     void Unbind();
 private:
     unsigned int ID;

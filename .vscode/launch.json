@@ -2,8 +2,8 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "cppvsdbg",
-            "console": "newExternalWindow",
+            "type": "cppdbg",
+            "externalConsole": true,
             "cwd": "${workspaceFolder}",
             "request": "launch",
             "name": "MinecraftClone Launch",
