@@ -4,6 +4,7 @@
 #include <iostream>
 
 #include "window/window.hpp"
+#include "renderer/renderer.hpp"
 
 class MC 
 {
@@ -14,6 +15,7 @@ public:
     void Run();
 private:
     Window *window;
+    Renderer *renderer;
 
     void Render();
     void Update();

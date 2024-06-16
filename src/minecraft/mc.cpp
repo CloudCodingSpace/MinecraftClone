@@ -3,10 +3,12 @@
 MC::MC()
 {
     window = new Window(800, 600);
+    renderer = new Renderer();
 }
 
 MC::~MC()
 {
+    delete renderer;
     delete window;
 }
 
@@ -27,10 +29,11 @@ void MC::Run()
 
 void MC::Render()
 {
-
+    renderer->Render(window->GetWidth(), window->GetHeight());
 }
 
 void MC::Update()
 {
+    renderer->Update();
     window->Update();
 }
