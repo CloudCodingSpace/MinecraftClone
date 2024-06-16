@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cppvsdbg",
+            "console": "newExternalWindow",
+            "cwd": "${workspaceFolder}",
+            "request": "launch",
+            "name": "MinecraftClone Launch",
+            "program": "${workspaceFolder}/bin/MinecraftClone.exe",
+            "stopAtEntry": false
+        }
+    ]
+}
